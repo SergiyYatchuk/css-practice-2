@@ -1,0 +1,107 @@
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+* {
+  color: blueviolet;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #976f6f;
+}
+
+#user,
+.user {
+  color: fuchsia;
+}
+
+h1,
+h2#user,
+button {
+  color: yellow;
+}
+
+div > p {
+  color: paleturquoise;
+}
+
+footer > .user {
+  color: aquamarine;
+} */
+
+.card-dark {
+  background: #d5cfcf;
+}
+.item {
+  color: green;
+}
+.item:last-child {
+  color: yellow;
+}
+.item:nth-child(3) {
+  color: red;
+}
+.input-dark {
+  background: #7d7575;
+}
+
+.input-dark[required] {
+  background: #b85b5b;
+}
+.input-dark[type='number'] {
+  background: #5faa52;
+}
+.small-img[alt~='small'] {
+  height: 500px;
+}
+button[class|='btn'] {
+  background: rgb(226, 70, 22);
+}
+a[class*='btn'] {
+  background: rgb(34, 94, 206);
+}
+.btn::first-letter {
+  color: #b85b5b;
+}
+.big-text::first-line {
+  color: rgb(235, 10, 10);
+}
+.input-dark::placeholder {
+  color: blueviolet;
+}
+.big-text::before {
+  content: '$$$$';
+  color: #7d7575;
+}
+#test:target {
+  color: #b85b5b;
+}
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: #5faa52;
+}
+
+.card:active {
+  background-color: #b72c80;
+}
+input {
+  background-color: #7d7575;
+}
+input:focus {
+  background-color: red;
+}

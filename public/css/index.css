@@ -1,7 +1,29 @@
-html {
-  max-width: 720px;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+
+  /* writing-mode: vertical-rl; */
+  text-align: center;
+  letter-spacing: 100%;
+}
+pre {
+  tab-size: 10px;
 }
 
-body {
-  background: #fff;
+* {
+  font-family: fantasy;
+  font-size: 25px;
+  font-weight: 100;
+}
+.test {
+  display: block;
+}
+
+.block {
+  display: block;
+  background: rgb(185, 182, 182);
+  margin: auto;
+
+  width: min-content;
 }
