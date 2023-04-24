@@ -1,0 +1,91 @@
+<div class='page'>
+  <div class='page_content'>
+    <div class="page_block">
+      <header class='header row g-0'>
+        <div class="col-3">
+          {{>logo}}
+        </div>
+        <nav class='header_nav col-9 '>
+      
+          <div class="header_nav_right">{{>nav list=header}}</div>
+        </nav>
+      </header>
+      
+    </div>
+    
+     <div class="page_block">
+      <div class="hero">
+        {{#with hero}}
+        {{>hero title=title text=text}}
+        <a class="button" href="{{button.url}}">{{button.text}}</a>
+        {{/with}}
+        </div>
+     </div>
+    
+    <div class="page_block">
+        <div class="row g-4">
+          {{#each preview}}
+          <div class="col-6">
+            {{> cardPreview data=this}}
+          </div>
+          {{/each}}
+        </div>
+    </div>
+
+<div class="page_block">
+			<div class='list'>
+				<h2 class="list_title">List of posts</h2>
+				<div class='list_categories'>
+					{{#each categories}}
+						<a href='#' class='list_category'>{{text}}</a>
+					{{/each}}
+				</div>
+			</div>
+			{{> line}}
+			<div class="news">
+				<section class="post">
+					{{#each news}}
+						{{> cardPost}}
+					{{/each}}
+				</section>
+				<sidebar class="sidebar">
+					<div class="sidebar_item about">
+						<h4 class="about_title">About</h4>
+						<p class="about_text">{{about}}</p>
+					</div>
+					<div class="sidebar_item archives">
+						<h3 class="archives_title">Archives</h3>
+						<div class="archives_link">
+							{{#each archive}}
+								<a href='{{url}}' class='archives_item'>{{text}}</a>
+							{{/each}}
+						</div>
+					</div>
+					<div class="sidebar_item sociales">
+						<h3 class="sociales_title">Sociales</h3>
+						<div class="sociales_link">
+							{{#each social}}
+								<a href='{{url}}' class='sociales_item'>{{text}}</a>
+							{{/each}}
+						</div>
+					</div>
+				</sidebar>
+			</div>
+		</div>
+
+    <div class="page_block">
+      <footer class="row g-0 footer">
+        <div class="col-3">
+             {{>logo}}
+             <span class="footer_copyright">Copyright 2023-2024</span>
+        </div>
+        {{#each footer}}
+        <div class="col-3">
+          <span class="footer_title">{{title}}</span>
+          {{>nav list=links isVertical=true}}
+          </div>
+        {{/each}}
+      </footer>
+    </div>
+  </div>
+</div>
