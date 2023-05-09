@@ -157,3 +157,26 @@
 h1 {
   text-shadow: 2px 2px 2px red;
 }
+
+.card_block {
+  /* list-style-type: upper-alpha; */
+  list-style-position: inside;
+
+  padding: 0;
+}
+.card_description_item {
+  display: list-item;
+}
+.table tr {
+  border: 1px solid #6c757d;
+}
+.table tr td {
+  border: 1px solid #b7bc1d;
+}
+.table {
+  table-layout: auto;
+  width: 200px;
+  border-collapse: unset;
+  border-spacing: 10px;
+  caption-side: top;
+}
