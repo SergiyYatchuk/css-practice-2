@@ -306,3 +306,11 @@ html {
   font-weight: var(--weight_text);
   line-height: var(--space-l);
 }
+
+.advantages {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr;
+}
