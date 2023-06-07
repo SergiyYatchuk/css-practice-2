@@ -306,6 +306,7 @@ html {
   font-weight: var(--weight_text);
   line-height: var(--space-l);
 }
+<<<<<<< HEAD
 
 .advantages {
   display: grid;
@@ -314,3 +315,5 @@ html {
 
   grid-template-rows: 1fr 1fr;
 }
+=======
+>>>>>>> dfd93f61ea957571194be2db81fcb56abe508c38
